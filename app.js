@@ -26,11 +26,54 @@
   }
 
   function socialIcon(type) {
-    const letters = {facebook:'f', tiktok:'♪', google:'G'};
     const node = document.createElement('span');
     node.className = `social-icon ${type}`;
-    node.textContent = letters[type] ?? '•';
     node.setAttribute('aria-hidden', 'true');
+    const icon = svgElement('svg', {
+      class:'social-icon-mark',
+      viewBox:'0 0 24 24',
+      focusable:'false'
+    });
+    if (type === 'facebook') {
+      icon.appendChild(svgElement('path', {
+        d:'M13.35 21v-8.2h2.76l.41-3.2h-3.17V7.56c0-.93.26-1.56 1.59-1.56h1.69V3.14A22 22 0 0 0 14.17 3c-2.44 0-4.11 1.49-4.11 4.23V9.6H7.3v3.2h2.76V21z',
+        fill:'currentColor'
+      }));
+    } else if (type === 'tiktok') {
+      icon.append(
+        svgElement('path', {
+          d:'M15 3v11.15a4.12 4.12 0 1 1-3.3-4.04v3.48a.92.92 0 1 0 .18.56V3h3.12c.19 1.56 1.07 2.77 2.7 3.42v3.27A8.06 8.06 0 0 1 15 8.57',
+          fill:'none', stroke:'#8acfd0', 'stroke-width':2.1,
+          'stroke-linecap':'round', 'stroke-linejoin':'round',
+          transform:'translate(-.65 .35)'
+        }),
+        svgElement('path', {
+          d:'M15 3v11.15a4.12 4.12 0 1 1-3.3-4.04v3.48a.92.92 0 1 0 .18.56V3h3.12c.19 1.56 1.07 2.77 2.7 3.42v3.27A8.06 8.06 0 0 1 15 8.57',
+          fill:'none', stroke:'currentColor', 'stroke-width':1.8,
+          'stroke-linecap':'round', 'stroke-linejoin':'round'
+        })
+      );
+    } else if (type === 'google') {
+      icon.append(
+        svgElement('path', {
+          d:'M21 12.2c0-.68-.06-1.36-.18-2H12v3.8h5.05a4.32 4.32 0 0 1-1.87 2.84v2.47h3.02c1.77-1.63 2.8-4.04 2.8-7.11',
+          fill:'#4285f4'
+        }),
+        svgElement('path', {
+          d:'M12 21.3c2.52 0 4.63-.84 6.17-2.28l-3.02-2.47c-.84.57-1.91.91-3.15.91-2.42 0-4.48-1.63-5.22-3.83H3.66v2.55A9.3 9.3 0 0 0 12 21.3',
+          fill:'#34a853'
+        }),
+        svgElement('path', {
+          d:'M6.78 13.63a5.6 5.6 0 0 1 0-3.56V7.52H3.66a9.3 9.3 0 0 0 0 8.66z',
+          fill:'#fbbc05'
+        }),
+        svgElement('path', {
+          d:'M12 6.24c1.37 0 2.6.47 3.57 1.4l2.68-2.68A8.96 8.96 0 0 0 12 2.7a9.3 9.3 0 0 0-8.34 4.82l3.12 2.55C7.52 7.87 9.58 6.24 12 6.24',
+          fill:'#ea4335'
+        })
+      );
+    }
+    node.appendChild(icon);
     return node;
   }
 
