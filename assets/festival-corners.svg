@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" preserveAspectRatio="xMidYMid slice">
+<defs><linearGradient id="kite" x1="0" x2="1"><stop stop-color="#1453a5"/><stop offset="1" stop-color="#64ace5"/></linearGradient><linearGradient id="gold" x1="0" x2="1"><stop stop-color="#c18a3d"/><stop offset=".52" stop-color="#ffdf9a"/><stop offset="1" stop-color="#b87a26"/></linearGradient></defs>
+<!-- far left edge: one restrained festive kite with a curved tail -->
+<g opacity=".83" transform="translate(28 285) rotate(-12)"><path d="M100 -90 L180 14 L95 128 L12 15Z" fill="url(#kite)" stroke="url(#gold)" stroke-width="4"/><path d="M100 -90 L95 128 M12 15 L180 14" fill="none" stroke="#f4d393" stroke-width="3"/><circle cx="95" cy="14" r="12" fill="#eec97a"/><path d="M95 128 C149 195 69 245 101 321 S192 423 156 492" fill="none" stroke="#f4d8a3" stroke-width="3"/><path d="M102 316 l-38 34 m36 -34 36 16 M142 420 l-36 32 m36 -32 31 30" stroke="#ffde9b" stroke-width="4" fill="none"/></g>
+<!-- right upper edge hanging garland, bell and subtle kite -->
+<g transform="translate(1885 0)" opacity=".88"><path d="M0 0 C-20 71 19 143 0 224" stroke="#d1a457" stroke-width="3" fill="none"/><g fill="#eebc59" stroke="#cf9c36" stroke-width="1"><circle cx="-1" cy="36" r="16"/><circle cx="4" cy="67" r="14"/><circle cx="-2" cy="98" r="15"/><circle cx="0" cy="130" r="14"/></g><path d="M0 164 v22" stroke="#e0b76d" stroke-width="3"/><path d="M-22 211 q22-56 44 0 z" fill="url(#gold)" stroke="#f7dd9c" stroke-width="2"/><ellipse cx="0" cy="211" rx="27" ry="7" fill="#a9772e"/><circle cx="0" cy="227" r="7" fill="#e9be72"/></g>
+<g transform="translate(1952 326) rotate(19)" opacity=".65"><path d="M0 -56 L48 2 L0 67 L-47 2 Z" fill="#74b3e6" stroke="#f7d88e" stroke-width="3"/><path d="M0 -56 V67 M-47 2 H48" stroke="#d9eefa" stroke-width="2"/><path d="M0 67 C-62 152 21 207 -28 272" fill="none" stroke="#f9dda0" stroke-width="3"/></g>
+<!-- small bottom-edge festival dots only -->
+<g fill="#e9bc67" opacity=".35"><circle cx="67" cy="982" r="5"/><circle cx="106" cy="945" r="3"/><circle cx="1698" cy="1002" r="4"/><circle cx="1841" cy="961" r="3"/></g>
+</svg>

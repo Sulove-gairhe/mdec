@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="ne">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="theme-color" content="#164d95" />
+  <meta name="description" content="Modern Digital Electronics — Dashain Tihar 2083 spin and win." />
+  <title>Modern Digital Electronics | दशैं तिहार २०८३</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="app" class="app-shell">
+    <div class="subtle-grid" aria-hidden="true"></div>
+    <div class="festival-art" aria-hidden="true"></div>
+    <header class="site-header">
+      <div class="brand-lockup" aria-label="Modern Digital Electronics">
+        <span class="brand-glyph" aria-hidden="true">M<span>D</span>E</span>
+        <span class="brand-wordmark"><strong>MODERN DIGITAL</strong><small>ELECTRONICS</small></span>
+      </div>
+      <div class="campaign-label"><span class="campaign-dot"></span><span>FESTIVE EDITION <span class="campaign-sep">/</span> २०८३</span></div>
+    </header>
+
+    <main id="landing" class="page landing" aria-labelledby="landing-headline">
+      <section class="social-panel" aria-label="Scan our real Google Reviews, TikTok and Facebook QR codes">
+        <div id="qr-grid" class="qr-grid"></div>
+      </section>
+      <section class="landing-story">
+        <p class="landing-mini-heading"><span class="mini-divider"></span> DASHAIN • TIHAR • 2083 <span class="mini-divider"></span></p>
+        <div class="hero-emblem-frame"><img class="campaign-emblem" src="assets/modern-digital-2083-emblem.png" alt="मोडर्न डिजिटल वर्षा — दशैं तिहार २०८३" /></div>
+        <h1 id="landing-headline">स्क्यान गर्नुहोस् <span>र उपहार जित्नुहोस्!</span></h1>
+        <p class="hero-desc">हामीसँग जोडिनुहोस्, आफ्नो भाग्य आजमाउनुहोस्।</p>
+        <button id="open-gift" class="primary-button" type="button"><span class="button-sparkle" aria-hidden="true">✦</span><span>उपहार खोल्नुहोस्</span><span class="button-arrow" aria-hidden="true">→</span></button>
+        <div class="below-cta"><span class="small-star">✦</span> SCAN <span class="small-line"></span> SPIN <span class="small-line"></span> WIN</div>
+      </section>
+      <aside class="welcome-corner-note" aria-label="How to participate"><span>03 WAYS TO CONNECT</span><strong>SCAN ANY CODE</strong><small>FOLLOW • REVIEW • CELEBRATE</small></aside>
+    </main>
+
+    <main id="spin" class="page spin-page hidden" aria-labelledby="spin-headline">
+      <section class="wheel-stage">
+        <div class="stage-topline"><span class="mini-kite">✦</span> DASHAIN / TIHAR · 2083 <span class="stage-rule"></span> LUCKY SPIN</div>
+        <div class="wheel-wrap" role="img" aria-label="Five prize spinning wheel with red jug, white jug, multiplug, rupees 500 cashback and electric iron">
+          <div class="wheel-glow" aria-hidden="true"></div>
+          <svg id="wheel-svg" class="wheel-svg" viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <defs>
+              <linearGradient id="rimGradient" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff5cc"/><stop offset=".25" stop-color="#b57a26"/><stop offset=".48" stop-color="#ffe1a2"/><stop offset=".72" stop-color="#9f661b"/><stop offset="1" stop-color="#f6d892"/></linearGradient>
+              <radialGradient id="hubGradient" cx=".36" cy=".28" r=".9"><stop stop-color="#fff3d4"/><stop offset=".42" stop-color="#e5bc64"/><stop offset=".8" stop-color="#a8732b"/><stop offset="1" stop-color="#794811"/></radialGradient>
+              <radialGradient id="bulbGradient"><stop stop-color="#fff"/><stop offset=".42" stop-color="#fff4bb"/><stop offset="1" stop-color="#efb84f"/></radialGradient>
+            </defs>
+            <circle cx="400" cy="400" r="388" fill="url(#rimGradient)" stroke="#fff3c6" stroke-width="4"/>
+            <circle cx="400" cy="400" r="367" fill="#153d78" stroke="#69451f" stroke-width="4"/>
+            <circle cx="400" cy="400" r="352" fill="url(#rimGradient)" />
+            <g id="wheel-rotor"></g>
+            <circle cx="400" cy="400" r="350" fill="none" stroke="#f7dc9b" stroke-width="3"/>
+            <g id="wheel-bulbs"></g>
+            <circle cx="400" cy="400" r="83" fill="url(#hubGradient)" stroke="#fff2bd" stroke-width="9"/>
+            <circle cx="400" cy="400" r="71" fill="none" stroke="#93601c" stroke-width="3" stroke-dasharray="3 6"/>
+            <text x="400" y="393" text-anchor="middle" class="hub-text">MDE</text>
+            <text x="400" y="425" text-anchor="middle" class="hub-subtext">२०८३</text>
+          </svg>
+          <div class="wheel-pointer" aria-hidden="true"><svg viewBox="0 0 100 118"><path d="M50 108 7 14 Q50 -9 93 14Z" fill="#f9dc91" stroke="#fff8d8" stroke-width="5"/><path d="M50 94 24 21 Q50 9 76 21Z" fill="#b77926"/></svg></div>
+        </div>
+        <p id="spin-status" class="spin-status" aria-live="polite">घुम्न तयार छ…</p>
+      </section>
+      <section class="spin-sidebar">
+        <p class="eyebrow">FESTIVE EDITION / 2083</p>
+        <h1 id="spin-headline">भाग्यको<br/><span>चक्का!</span></h1>
+        <p class="sidebar-description">तपाईंको लागि कुन उपहार आउँछ? चक्का घुम्दैछ!</p>
+        <div id="spinning-copy" class="spinning-copy"><span class="loader-ring"></span><div><strong>उपहार छनोट हुँदैछ...</strong><small>PLEASE WAIT FOR THE WHEEL TO STOP</small></div></div>
+        <div id="win-result" class="win-result hidden" aria-live="assertive">
+          <div class="result-top"><span class="result-stars">✦ ✦</span><span>CONGRATULATIONS!</span></div>
+          <p class="result-greeting">बधाई छ! 🎉</p>
+          <div class="prize-reveal"><img id="result-image" src="assets/red-kettle.png" alt=""/><div><p>तपाईंले जित्नुभयो</p><h2 id="result-title">—</h2><span id="result-english">PRIZE</span></div></div>
+          <p class="result-instructions">उपहार प्राप्त गर्न हाम्रो स्टाफलाई जानकारी दिनुहोस्।</p>
+        </div>
+        <div class="prize-legend"><div class="legend-heading"><span>आजका उपहारहरू</span><span>05 GIFTS</span></div><div id="prize-list" class="prize-list"></div></div>
+        <button id="next-customer" class="secondary-button" type="button">← <span>अर्को ग्राहकका लागि सुरु गर्नुहोस्</span></button>
+      </section>
+    </main>
+    <footer class="site-footer"><span>MODERN DIGITAL ELECTRONICS</span><span class="footer-center">दशैं तिहार २०८३</span><span>CELEBRATING WITH YOU <span class="footer-diamond">◆</span></span></footer>
+  </div>
+  <canvas id="confetti" aria-hidden="true"></canvas>
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
