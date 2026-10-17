@@ -4,7 +4,7 @@ Fully offline two-screen 16:9 website for **दशैं तिहार २०�
 
 ## Start
 
-Open `index.html` in Chrome or Edge; press **F11** for fullscreen on the TV. No hosting, internet, framework, or setup is needed to display the site. Internet access is necessary when visitors scan the QR codes to open social pages. The spinning/winner reveal functions offline.
+Open `index.html` in Chrome or Edge. Click **Full screen** in the bottom-right corner to fill the TV display; press **Esc** or click **Exit full screen** to leave fullscreen. No hosting, internet, framework, or setup is needed to display the site. Internet access is necessary when visitors scan the QR codes to open social pages. The spinning/winner reveal functions offline.
 
 ## Actual QR code images
 

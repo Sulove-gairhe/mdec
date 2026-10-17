@@ -75,7 +75,17 @@
         <button id="next-customer" class="secondary-button" type="button">← <span>अर्को ग्राहकका लागि सुरु गर्नुहोस्</span></button>
       </section>
     </main>
-    <footer class="site-footer"><span>MODERN DIGITAL ELECTRONICS</span><span class="footer-center">दशैं तिहार २०८३</span></footer>
+    <footer class="site-footer">
+      <span>MODERN DIGITAL ELECTRONICS</span>
+      <span class="footer-center">दशैं तिहार २०८३</span>
+      <div class="footer-actions">
+        <span id="fullscreen-status" class="fullscreen-status" role="status" aria-live="polite"></span>
+        <button id="fullscreen-toggle" class="fullscreen-button" type="button" aria-pressed="false">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5m11-5v5h-5"/></svg>
+          <span>Full screen</span>
+        </button>
+      </div>
+    </footer>
   </div>
   <canvas id="confetti" aria-hidden="true"></canvas>
   <script src="config.js"></script>

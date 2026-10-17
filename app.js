@@ -11,6 +11,8 @@
   const spinnerCopy = $('#spinning-copy');
   const result = $('#win-result');
   const nextCustomer = $('#next-customer');
+  const fullscreenToggle = $('#fullscreen-toggle');
+  const fullscreenStatus = $('#fullscreen-status');
   let spinning = false;
   let spinTimer = null;
   let visitSequence = 0;
@@ -224,6 +226,24 @@
     else displayLanding();
   }
 
+  function updateFullscreenControl() {
+    const isFullscreen = Boolean(document.fullscreenElement);
+    fullscreenToggle.setAttribute('aria-pressed', String(isFullscreen));
+    fullscreenToggle.querySelector('span').textContent = isFullscreen ? 'Exit full screen' : 'Full screen';
+  }
+
+  async function toggleFullscreen() {
+    fullscreenStatus.textContent = '';
+    try {
+      if (document.fullscreenElement) await document.exitFullscreen();
+      else if (document.documentElement.requestFullscreen) await document.documentElement.requestFullscreen();
+      else fullscreenStatus.textContent = 'Full screen is not supported by this browser.';
+    } catch (error) {
+      console.error('Could not change fullscreen mode:', error);
+      fullscreenStatus.textContent = 'Could not change full screen mode. Check browser permissions.';
+    }
+  }
+
   function startSpin() {
     if (spinning) return;
     clearSpinTimer();
@@ -318,6 +338,8 @@
 
   $('#open-gift').addEventListener('click', gotoSpin);
   nextCustomer.addEventListener('click', gotoLanding);
+  fullscreenToggle.addEventListener('click', toggleFullscreen);
+  document.addEventListener('fullscreenchange', updateFullscreenControl);
   window.addEventListener('hashchange', onRoute);
   window.addEventListener('resize', () => {if (confettiFrame) resizeConfetti();});
   window.addEventListener('keydown', event => {
